@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_marginTop="56dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/fondo_pantalla"
+        android:elevation="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck">
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+
+            >
+
+            <ImageView
+                android:id="@+id/detalle_plato_imagen"
+                android:layout_width="match_parent"
+                tools:srcCompat="@tools:sample/backgrounds/scenic"
+                android:layout_height="180dp"
+                android:adjustViewBounds="true"
+                android:background="@android:color/transparent"
+                android:scaleType="centerCrop"
+
+                />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="30dp"
+
+            >
+            <TextView
+                android:id="@+id/detalle_nombre_plato"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/nombre_plato"
+                android:layout_marginBottom="2dp"
+
+                android:fontFamily="@font/cook_book_title"
+                android:textSize="30dp"
+                android:textColor="@color/letra"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="30dp">
+
+
+                <TextView
+                    android:id="@+id/detalle_pais_plato"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginRight="120dp"
+
+
+                    android:drawableLeft="@drawable/bandera"
+                    android:drawablePadding="5dp"
+                    android:fontFamily="@font/balivia"
+                    android:singleLine="true"
+
+
+                    android:text="@string/area_plato"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+
+                    />
+
+                <TextView
+                    android:id="@+id/detalle_categoria_plato"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+                    android:drawableLeft="@drawable/categorias"
+                    android:singleLine="true"
+                    android:drawablePadding="5dp"
+                    android:fontFamily="@font/balivia"
+
+
+
+                    android:text="@string/categoria_plato"
+                    android:textColor="@color/black"
+                    android:textSize="20dp" />
+
+            </RelativeLayout>
+
+
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/instrucciones"
+                    android:drawablePadding="5dp"
+                    android:drawableLeft="@drawable/receta"
+                    android:singleLine="true"
+                    android:layout_marginBottom="5dp"
+                    android:textSize="20dp"
+                    android:fontFamily="@font/cook_book_title"
+                    android:textColor="@color/letra"/>
+
+                <TextView
+                    android:id="@+id/detalle_descripcion_plato"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/descripciopn_letra"
+                    android:text="@string/descripcion"
+                    android:fontFamily="@font/balivia"/>
+
+
+
+
+
+
+
+        </LinearLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

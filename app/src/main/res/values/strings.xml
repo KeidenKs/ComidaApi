@@ -1,0 +1,26 @@
+<resources>
+    /Login
+    <string name="app_name">CalorieKing</string>
+    <string name="unsername">Username</string>
+    <string name="password">Password</string>
+    <string name="boton_iniciar_sesion">Sign in</string>
+    <string name="boton_crear_usuario">Register</string>
+
+    /Registrar_usuario
+    <string name="boton_editar_foto">Profile picture</string>
+    <string name="nombre">Names</string>
+    <string name="apellidos">Surnames</string>
+    <string name="boton_cancelar">Cancel</string>
+    <string name="boton_registrar_usuario">Register</string>
+
+    /Lista_Plato
+    <string name="nombre_plato">Name</string>
+    <string name="categoria_plato">Category</string>
+    <string name="area_plato">Area</string>
+    <string name="boton_lista_plato">View Info</string>
+
+    /Detalle_Plato
+    <string name="instrucciones">Instructions</string>
+    <string name="descripcion">Descripcions</string>
+
+</resources>
